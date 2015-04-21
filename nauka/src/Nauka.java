@@ -1,9 +1,10 @@
+import java.util.Scanner;
 
 public class Nauka {
-
-		
-		
+	
 	    public static void main(String[] args) {
+	    	
+  	
 	        int[] numbers = {
 	            951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544, 
 	        615, 83, 165, 141, 501, 263, 617, 865, 575, 219, 390, 984, 592, 236, 105, 942, 941, 
@@ -22,5 +23,24 @@ public class Nauka {
 	 		else continue;
 	    }
 	    
+        Student[] students = new Student[] {
+	            new Student("Morgan", "Freeman"),
+	            new Student("Brad", "Pitt"),
+	            new Student("Kevin", "Spacey"),
+	        };
+	        for (Student s : students) {
+	            s.printFullName();
+	        }
+
+	    	 for(int d = 0; d< args.length; d++)
+	              System.out.println(args[d] + "___");
 	    
-	}}
+	   // double x; double y;
+	    Scanner odczyt = new Scanner(System.in);
+	    System.out.println("Podaj liczbe: ");
+	    double x = odczyt.nextDouble();
+	    System.out.println("Podaj liczbe: ");
+	    double y = odczyt.nextDouble();
+	    System.out.println("Twoje liczby to : " + x + " " + y);
+	    odczyt.close();
+	    }}
